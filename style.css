@@ -66,7 +66,7 @@ main {
 .input_section > form > button > span {
     font-weight: bold;
 }
-
+ 
 .input_section > form > .input > input {
     display: block;
     width: 100%;
@@ -127,6 +127,7 @@ main {
 .search_section > form > input {
     padding: 5px;
     border-radius: 5px;
+    margin-bottom: 0;
 }
 
 .search_section > form > button {
@@ -235,4 +236,20 @@ main {
 
 .shadow {
     box-shadow: 0 5px 10px rgba(154, 160, 185, .05), 0 15px 40px rgba(166, 173, 201, .2);
+}
+
+@media (max-width: 540px) {
+    .search_section > form {
+        padding-bottom: 0;
+        padding-left: 0;
+    }
+
+    .search_section > form > input {
+        width: 220px;
+    }
+
+    .search_section > form > button {
+        height: 40px;
+        width: 40px;
+    }
 }
